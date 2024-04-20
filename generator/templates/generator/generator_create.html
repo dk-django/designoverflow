@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Updated Sidebar Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reports</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Design Overflow</a>           
+      </nav>
+
+      <div class="container mt-4">
+        Page content goes here -->
+<!--   <h2>Main Content Area</h2>
+        <p>This is where the main content of the page would be.</p>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.navbar-toggler').click(function(){
+      $('.sidebar').toggleClass('d-md-block');
+    });
+  });
+</script>
+
+</body>
+</html> -->
+
+
+<head>
+  <title>Design Overflow</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- design overflow in the middle of the page in both mobile and desktop view -->
+        <!-- another icon or a button with the name 'new', at the far top right of the screen on mobile (so while writing this, i just had
+          the feeling of we creating for mobile first, before creating for desktop)-->
+        <!-- a toggle button at the far top left of the screen that toggles the sidebar which contains previous prompts -->
+
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <div class="row w-100">
+          <!-- <div class="col-lg-6">
+          </div> -->
+          <div class="col-lg-4 d-flex justify-content-end align-items-center">
+            <h3 class="navbar-brand">Design Overflow</h3>
+            <a class="nav-link" href="/generate_create">New</a>
+          </div>
+          <!-- <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <button class="btn btn-link">Sidebar</button>
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul> -->
+          <!-- <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+              </li>
+            </ul>
+          </div>  -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="sidebar">
+    <!-- for every previous prompts in prompt, print prompts 
+    in other words, I am using django templates to interactive with the database and loop thru previous prompts stored in the database. -->
+  </div>
+
+  <div class="content">
+    <!-- here goes or appears design overflow logo with the word 'what can i design for you today?'-->
+
+    <!-- just at the bottom of the screen appears the prompt box -->
+    <p>What Can I Design For You Today?</p>
+  </div>
+
+  <form action="submit">
+    <label for="prompt"></label>
+    <input type="text" placeholder="Message Design Overflow">
+  </form>
+
+
+  <!-- and that's it -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
